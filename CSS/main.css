@@ -164,21 +164,26 @@
 .team.list {
   display: flex;
   justify-content: space-between;
+  align-items: start;
 }
 
 .worker {
   width: 278px;
+
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 
   /* border-top-left-radius: 4px; */
 
   text-align: center;
 }
 
-.worker > img {
+.worker__img {
   display: block;
 }
 
-.worker .worker-name {
+.worker__name {
   margin-top: 0;
   margin-bottom: 10px;
 
@@ -190,7 +195,7 @@
   letter-spacing: 0.03em;
 }
 
-.position {
+.worker__position {
   margin-top: 0;
   margin-bottom: 16px;
 
@@ -202,11 +207,11 @@
   letter-spacing: 0.03em;
 }
 
-.worker .list li {
+.worker__social-item {
   display: inline-block;
 }
 
-.worker-card-content {
+.worker__card-content {
   overflow: hidden;
   background-color: var(--primary-white-color);
 

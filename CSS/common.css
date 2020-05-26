@@ -51,9 +51,26 @@ body {
 
   text-decoration: none;
   text-align: center;
+  align-items: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+}
+
+.send-button {
+  display: flex;
+}
+
+.send-button::after {
+  display: inline-flex;
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-image: url(../images/icon-send.svg);
 }
 
 /* Header */
@@ -116,6 +133,9 @@ header {
 
   padding-top: 32px;
   padding-bottom: 32px;
+
+  text-decoration: none;
+  font-style: normal;
 }
 
 .site-nav__link:hover,
@@ -260,7 +280,6 @@ header {
 }
 
 .subscribe-box button {
-  display: block;
   margin-left: auto;
 }
 
