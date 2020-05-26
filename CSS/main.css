@@ -98,28 +98,41 @@
   display: flex;
 }
 
-.benefits li {
-  width: 278px;
+.benefits-item {
+  width: 270px;
 }
 
-.benefits > li > a {
+.benefits-item::before {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 55px;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
 
-  padding: 25px 104px;
-  border: 1px solid transparent;
   background-color: var(--special-section-bg-color);
+  background-repeat: no-repeat;
+  background-position: center;
+
   border-radius: 4px;
 }
 
-.benefits > li > a:hover {
-  background-color: var(--accent-color);
+.benefits-item:not(:first-child) {
+  margin-left: auto;
 }
 
-.benefits li:not(:first-child) {
-  margin-left: auto;
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.icon-astronauut::before {
+  background-image: url(../images/astronaut.svg);
 }
 
 /* Our possibilities */
