@@ -5,15 +5,36 @@
 
 /* Hero */
 .hero {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 1px solid red; */
+
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url("../images/hero-img.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
+  max-width: 646px;
   margin-top: 0;
   margin-bottom: 46px;
+  margin-left: auto;
+  margin-right: auto;
 
   color: var(--primary-white-color);
-  background-color: turquoise;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
