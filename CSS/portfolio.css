@@ -47,16 +47,15 @@ main {
   /* outline: 2px solid tomato; */
 }
 
-.work-examples .list {
+.work-examples__list {
   display: flex;
   flex-wrap: wrap;
   /* background-color: turquoise; */
   margin: -15px;
 }
 
-.title {
-  margin-top: 20px;
-  margin-bottom: 0;
+.card__title {
+  margin: 0;
 
   color: var(--title-text-color);
   font-weight: 700;
@@ -65,7 +64,7 @@ main {
   letter-spacing: 0.06em;
 }
 
-.type {
+.card__type {
   margin-top: 4px;
   margin-bottom: 0;
 
