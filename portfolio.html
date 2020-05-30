@@ -26,10 +26,12 @@
 
           <ul class="site-nav__list list">
             <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link current">Студия</a>
+              <a href="./index.html" class="site-nav__link">Студия</a>
             </li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+              <a href="./portfolio.html" class="site-nav__link current"
+                >Портфолио</a
+              >
             </li>
             <li class="site-nav__item">
               <a href="" class="site-nav__link">Контакты</a>
@@ -60,38 +62,39 @@
     </header>
 
     <main>
-      <h1 class="hiden">Работы нашей студии</h1>
+      <h1 class="visually-hidden">Работы нашей студии</h1>
 
       <!-- Фильтры -->
       <div class="container filters">
-        <h2 class="hiden">Фильтры</h2>
-        <ul class="list">
-          <li>
-            <button class="filter-button">Все</button>
+        <h2 class="visually-hidden">Фильтры</h2>
+        <ul class="filters__list list">
+          <li class="filters__item">
+            <button class="filters__button">Все</button>
           </li>
-          <li>
-            <button class="filter-button">Веб-сайты</button>
+          <li class="filters__item">
+            <button class="filters__button">Веб-сайты</button>
           </li>
-          <li>
-            <button class="filter-button">Приложения</button>
+          <li class="filters__item">
+            <button class="filters__button">Приложения</button>
           </li>
-          <li>
-            <button class="filter-button">Дизайн</button>
+          <li class="filters__item">
+            <button class="filters__button">Дизайн</button>
           </li>
-          <li>
-            <button class="filter-button">Маркетинг</button>
+          <li class="filters__item">
+            <button class="filters__button">Маркетинг</button>
           </li>
         </ul>
       </div>
 
       <!-- Примеры работ -->
       <div class="container work-examples">
-        <h2 class="hiden">Примеры работ</h2>
+        <h2 class="visually-hidden">Примеры работ</h2>
         <ul class="list">
           <li class="card">
             <a class="link" href="">
-              <div>
+              <div class="card__header">
                 <img
+                  class="card__image"
                   src="./portfolio-images/technokryak.jpg"
                   width="370"
                   height="294"
@@ -103,7 +106,7 @@
                   шпионажа и атак на защищённые сервера конкурентов.
                 </p>
               </div>
-              <div class="card-content">
+              <div class="card__content">
                 <h3 class="title">Технокряк</h3>
 
                 <p class="type">Веб-сайт</p>

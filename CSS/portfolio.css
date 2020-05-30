@@ -4,28 +4,26 @@
   --card-border-color: #eeeeee;
 }
 
-.filters {
-  margin-top: 93px;
+main {
+  padding-top: 93px;
 }
 
-.filters .list {
+.filters__list {
   display: flex;
   justify-content: center;
 }
 
-.filters .list > li:not(:first-child) {
+.filters__item:not(:first-child) {
   margin-left: 8px;
 }
 
-.filters .list > li {
+.filters__button {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
-}
 
-.filter-button {
-  border: 1px solid transparent;
+  border: none;
   border-radius: 4px;
 
   color: var(--title-text-color);
@@ -36,9 +34,11 @@
   line-height: 1.62;
 }
 
-.filter-button:hover {
+.filters__button:hover {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
 .work-examples {
@@ -94,6 +94,11 @@
   margin-bottom: 0px;
 } */
 
+.card:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
 .card-hover {
   display: none;
   color: var(--primary-white-color);
@@ -102,11 +107,11 @@
   line-height: 1.56;
 }
 
-.card .link > img {
+.card__image {
   display: block;
 }
 
-.card-content {
+.card__content {
   overflow: hidden;
   padding: 20px 20px;
 
@@ -115,8 +120,4 @@
   border-right: 1px solid var(--card-border-color);
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-}
-
-.hiden {
-  display: none;
 }
