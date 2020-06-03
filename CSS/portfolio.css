@@ -98,12 +98,31 @@ main {
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
-.card-hover {
-  display: none;
+.card__header {
+  position: relative;
+}
+
+.card__overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 63px 24px;
+
   color: var(--primary-white-color);
   background-color: var(--card-hover-color);
   font-size: 18px;
   line-height: 1.56;
+
+  opacity: 0;
+}
+
+.card:hover .card__overlay {
+  opacity: 1;
 }
 
 .card__image {
