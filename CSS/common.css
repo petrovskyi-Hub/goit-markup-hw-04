@@ -91,12 +91,19 @@ body {
 } */
 
 /* Header */
-header {
-  border-bottom: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: var(--section-border-color);
+.page-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  background-color: var(--primary-white-color);
 }
 
+.header-line {
+  border-bottom: 1px solid var(--section-border-color);
+}
 .container.header {
   display: flex;
   align-items: center;
@@ -137,6 +144,8 @@ header {
 }
 
 .site-nav__item {
+  position: relative;
+
   margin-right: 30px;
 }
 
@@ -162,10 +171,19 @@ header {
 
 .current {
   color: var(--accent-color);
-  border-bottom: solid;
-  border-color: var(--accent-color);
-  border-width: 2px;
-  /* border-radius: 2px; */
+}
+
+.current::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+
+  background-color: var(--accent-color);
+  border-radius: 2px;
 }
 
 .contacts {

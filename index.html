@@ -17,7 +17,7 @@
   </head>
   <body>
     <!-- Шапка сайта -->
-    <header>
+    <header class="page-header">
       <div class="container header">
         <nav class="site-nav">
           <a href="./index.html" class="logo link">
@@ -125,41 +125,50 @@
       </section>
 
       <!-- Чем мы занимаемся -->
-      <section class="possibilities section">
+      <section class="section">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="possibilities list">
-            <li>
-              <a href="" class="possibilities title link">
+            <li class="possibilities__item">
+              <a href="" class="possibilities__link link">
                 <img
+                  class="possibilities__image"
                   src="./images/laptop.jpg"
-                  width="380"
+                  width="370"
                   height="294"
                   alt="Ноутбук"
                 />
-                Десктопные приложения
+                <div class="possibilities__title-container">
+                  <h3 class="possibilities__title">Десктопные приложения</h3>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="" class="possibilities title link">
+            <li class="possibilities__item">
+              <a href="" class="possibilities__link link">
                 <img
+                  class="possibilities__image"
                   src="./images/phone.jpg"
-                  width="380"
+                  width="370"
                   height="294"
                   alt="Смартфон"
                 />
-                Мобильные приложения
+                <div class="possibilities__title-container">
+                  <h3 class="possibilities__title">Мобильные приложения</h3>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="" class="possibilities title link">
+            <li class="possibilities__item">
+              <a href="" class="possibilities__link link">
                 <img
+                  class="possibilities__image"
                   src="./images/design.jpg"
-                  width="380"
+                  width="370"
                   height="294"
                   alt="Десктопное приложение"
                 />
-                Дизайнерские решения
+                <div class="possibilities__title-container">
+                  <h3 class="possibilities__title">Дизайнерские решения</h3>
+                </div>
               </a>
             </li>
           </ul>
@@ -496,5 +505,13 @@
         <p class="copyright">2020 | Developed by GoIT Students</p>
       </div>
     </footer>
+
+    <script>
+      const { height: pageHeaderHeight } = document
+        .querySelector(".page-header")
+        .getBoundingClientRect();
+
+      document.body.style.paddingTop = `${pageHeaderHeight}px`;
+    </script>
   </body>
 </html>
